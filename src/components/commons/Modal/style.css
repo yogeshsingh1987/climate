@@ -1,0 +1,129 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  /* width: 257px; */
+  height: 350px;
+  position: absolute;
+  border-radius: 4px;
+  background: #ececec;
+  box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn {
+  display: flex;
+  height: 33px;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+.btn-background {
+  background: var(--CTA-Blue, #094eb6);
+}
+
+.btn-open {
+  position: absolute;
+  bottom: 150px;
+}
+
+.btn-close {
+  transform: translate(10px, -20px);
+  padding: 0.5rem 0.7rem;
+  background: #eee;
+  border-radius: 50%;
+}
+.hidden {
+  display: none;
+}
+.select {
+  border-radius: 4px;
+  border: 1px solid #cac9c9;
+  background: #fff;
+  height: 36px;
+  /* width: 197px; */
+  color: #37475c;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.label {
+  color: #37475c;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.range {
+  height: 36px;
+  width: 197px;
+}
+.range-text {
+  color: #37475c;
+
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.reset-button {
+  color: #9e9e9e;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 150% */
+}
+/* Styles for the slider component */
+.slider {
+  height: 10px;
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.slider__track,
+.slider__range {
+  border-radius: 3px;
+  height: 5px;
+}
+
+.slider__track {
+  background-color: #ced4da;
+  width: 100%;
+  z-index: 1;
+}
+
+.slider__range {
+  background-color: #9fe5e1;
+  z-index: 2;
+}
+
+.slider__left-value,
+.slider__right-value {
+  color: #dee2e6;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.slider__left-value {
+  left: 6px;
+}
+
+.slider__right-value {
+  right: -4px;
+}
+
+/* Removing the default appearance */

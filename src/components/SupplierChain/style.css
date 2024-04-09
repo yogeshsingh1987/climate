@@ -1,0 +1,15 @@
+.monthlyBar {
+  width: 520px;
+  height: 300px;
+}
+.table-col {
+  width: 120px;
+}
+.table-head {
+  border: 1px solid #76b3b3;
+  padding: 1px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  height: 82px;
+}

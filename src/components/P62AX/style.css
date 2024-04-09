@@ -1,0 +1,13 @@
+.box {
+  width: 252px;
+  padding: 6px;
+  min-height: 115px;
+  margin-top: 8px;
+}
+.b2b {
+  background-color: rgb(59 130 246 / 0.5);
+}
+.bar {
+  width: 800px;
+  height: 300px;
+}

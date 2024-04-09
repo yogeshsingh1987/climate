@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainBackgroundColor: #2C2C2C;
+  --primaryColor: #009BA5;
+  --secondaryColor: #00CAFF;
+  --darkestColor: #29525F;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--mainBackgroundColor);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* .card-dark {
+  background-color: #021836;
+} */
+
+.infoBox {
+  background-color: var(--darkestColor);
+}
+
+.card-light {
+  background-color: #009ba5;
+}
+.card-transparent {
+  border: 2px solid #009ba5;
+}
+
+table.infoTable {
+  border-spacing: 8px;
+    border-collapse: separate;
+}
+
+table.productInfoBox th, table.productInfoBox td {
+  border: 1px solid #FFF;
+}
+
+.background {
+  width: 100px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.line {
+  width: 111px;
+  height: 47px;
+  border-bottom: 1px solid #76B3B3;
+  transform: translateY(-20px) translateX(4px) rotate(26deg);
+  position: absolute;
+  /* z-index: -1; */
+}
+
+.background > div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+}
+
+.top {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+td,
+th {
+  border: 1px solid #FFF;
+  text-align: left;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+.header {
+  background: linear-gradient(180deg, #fff 0%, #c1c0c0 100%);
+  border-radius: 0px 0px 16px 16px;
+  height: 142px;
+}
