@@ -13,14 +13,14 @@ import Map from "../commons/Map";
 const Dashboard = () => {
   return (
     <>
-      <div>
-        <div className="px-28">
+      <div className="grid grid-cols-1 gap-8">
+        <div className="w-full">
           <FilterBar />
         </div>
-        <div className="px-28 min-w-[1900px] m-auto">
-          <Card variant="dark" cls="w-full">
-            <div className="flex flex-row">
-              <Card variant="light" cls="mr-5 w-[250px] h-[298px] shrink-0">
+        <div className="w-full">
+          <div className="1">
+            <div className="flex flex-row gap-4 w-full">
+              <Card variant="light" cls="mr-5 shrink-0">
                 <RiskScore
                   num="54"
                   text1="Climate Risk Score"
@@ -29,7 +29,7 @@ const Dashboard = () => {
                   hrLine={true}
                 />
               </Card>
-              <Card variant="light" cls="mr-5 w-[250px] h-[298px] shrink-0">
+              <Card variant="light" cls="mr-5 shrink-0">
                 <RiskScore
                   num="32"
                   text1="Resilience Score"
@@ -37,22 +37,22 @@ const Dashboard = () => {
                   hrLine={true}
                 />
               </Card>
-              <div>
-                <div className="flex flex-row">
-                  <Card variant="transparent" cls="mr-5 w-[252px]">
+              <div className="flex flex-col gap-4">
+                <div className="grid grid-cols-4 gap-4">
+                  <Card variant="transparent" cls="mr-5 ">
                     <NumScore num="$4.5B" text1="Total Revenue" />
                   </Card>
-                  <Card variant="transparent" cls="mr-5 w-[252px]">
+                  <Card variant="transparent" cls="mr-5 ">
                     <NumScore num="$2.8B" text1="Total CA-VAR" text2="/year" />
                   </Card>
-                  <Card variant="transparent" cls="mr-5 w-[252px]">
+                  <Card variant="transparent" cls="mr-5 ">
                     <NumScore
                       num="$295M"
                       text1="Resilience Investment"
                       text2="Avg/year"
                     />
                   </Card>
-                  <Card variant="transparent" cls="mr-5 w-[252px]">
+                  <Card variant="transparent" cls="mr-5 ">
                     <NumScore
                       num="$295M"
                       text1="CA-VAR Adjustment"
@@ -60,8 +60,8 @@ const Dashboard = () => {
                     />
                   </Card>
                 </div>
-                <div className="mt-8 flex flex-row">
-                  <BarCard text="Revenue by BU" cls="mr-5 min-w-[253px]">
+                <div className="grid grid-cols-4 gap-4">
+                  <BarCard text="Revenue by BU" cls="mr-5">
                     <BarChart
                       indexAxis="y"
                       displayLegend={false}
@@ -72,7 +72,7 @@ const Dashboard = () => {
                       data={APP_CONST.barData}
                     />
                   </BarCard>
-                  <BarCard text="Res-Investment by BU" cls="mr-5 min-w-[253px]">
+                  <BarCard text="Res-Investment by BU" cls="mr-5 2323">
                     <BarChart
                       indexAxis="y"
                       displayLegend={false}
@@ -83,7 +83,7 @@ const Dashboard = () => {
                       data={APP_CONST.barData}
                     />
                   </BarCard>
-                  <BarCard text="Total CA-VAR by BU" cls="mr-5 min-w-[253px]">
+                  <BarCard text="Total CA-VAR by BU" cls="mr-5 2323">
                     <BarChart
                       indexAxis="y"
                       displayLegend={false}
@@ -94,36 +94,41 @@ const Dashboard = () => {
                       data={APP_CONST.barData}
                     />
                   </BarCard>
-                  <Card variant="transparent" cls="mr-5 min-w-[250px]">
+                  <Card variant="transparent" cls="mr-5">
                     <NumScore num="$4.5B" text1="Total Revenue" />
                   </Card>
                 </div>
               </div>
             </div>
-          </Card>
+          </div>
         </div>
-        <div className="px-28 min-w-[1900px] m-auto">
-          <Card variant="dark" cls="w-full">
-            <div className="flex flex-row justify-between">
-            <div className="w-[245px] mr-5">
-                <p className="text-[24px] font-bold mb-7 text-center">
-                  Exposure Analysis
-                </p>
-                <DoughnutChart
-                  data={APP_CONST.doughnutData}
-                  displayLegend={false}
-                ></DoughnutChart>
-                <p className="text-[24px] font-bold mb-7 text-center">
-                  # of facilities 
-                </p>
-              </div>
-              <div className="mr-5">
-                <img src={MapSvg} alt="MAP" className="" />
-                {/* <Map /> */}
-              </div>
-              <Table />
+        <div className="w-full">
+          <div className="grid grid-cols-[30%_70%] gap-4 8888 ">
+            <div className=" ">
+              <img src={MapSvg} alt="MAP" className="" />
+              {/* <Map /> */}
             </div>
-          </Card>
+            <div className=" sfsdf ">
+              <div className="grid grid-cols-[20%_80%] gap-4 85855">
+                <div className=" 222 ">
+                  <p className="text-[18px] font-bold mb-7">
+                    Exposure Analysis # of facilities
+                  </p>
+                  <DoughnutChart
+                    data={APP_CONST.doughnutData}
+                    displayLegend={false}
+                  ></DoughnutChart>
+                </div>
+                <div className="test 222"><Table /></div>
+              </div>
+              <div  className="test q222">
+              dfadfsdf
+               
+              </div>
+            </div>
+
+            <div className="flex flex-row justify-between"></div>
+          </div>
         </div>
       </div>
     </>

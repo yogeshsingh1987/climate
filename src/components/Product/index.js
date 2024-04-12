@@ -166,13 +166,14 @@ const optionsDays = {
 const Product = () => {
   return (
     <>
-      <div className="px-28">
+    <div className="grid grid-cols-1 gap-8">
+      <div className="w-full">
         <FilterBar />
       </div>
-      <div className="px-28 py-5 min-w-[1900px]">
+      <div className="py-5 w-full 4444">
         <Card variant="dark" cls="w-full flex flex-row">
           <div className="w-[150px] mr-5">
-          <p className="text-[21px] font-bold mb-7 mt-4">
+          <p className="21 font-bold mb-7 mt-4">
               # of facilities
             </p>
             <DoughnutChart
@@ -185,14 +186,14 @@ const Product = () => {
             <div className="w-[280px]">
               <Card variant="transparent" cls="w-full">
                 <div>
-                  <p className="text-[21px] font-medium">Total Revenue</p>
-                  <p className="text-[36px] font-bold text-[#00CAFF]">$215M</p>
+                  <p className="21 font-medium">Total Revenue</p>
+                  <p className="text-[28px] font-bold text-[#00CAFF]">$215M</p>
                 </div>
               </Card>
               <Card variant="transparent" cls="mt-8 w-full">
                 <div>
-                  <p className="text-[21px] font-medium">Total COGS</p>
-                  <p className="text-[36px] font-bold text-[#00CAFF]">$152M</p>
+                  <p className="21 font-medium">Total COGS</p>
+                  <p className="text-[28px] font-bold text-[#00CAFF]">$152M</p>
                 </div>
               </Card>
             
@@ -270,8 +271,8 @@ const Product = () => {
           </div>
         </Card>
       </div>
-      <div className="px-28 py-5 min-w-[1900px]">
-        <Card variant="dark" cls="w-full flex flex-row">
+      <div className="py-5 w-full 555">
+        <div>
           <div className="flex flex-row">
             <div className="mr-5">
               <img src={MapSvg} alt="MAP" className="" />
@@ -288,7 +289,7 @@ const Product = () => {
               </div>
             </div>
             <div>
-              <div className="flex flex-row border-solid border-2 border-[##FFFFFF]">
+              <div className="flex flex-row border-solid border-2 border-[#FFFFFF]">
                 {/* <div className="w-[300px] border-solid border-2 border-[#2ED0C6]">
                   <p className="text-[18px] font-semibold text-center my-4">
                     Top 5 Disruptions 44
@@ -303,12 +304,12 @@ const Product = () => {
                     data={APP_CONST.barTableDisruptions}
                   />
                 </div> */}
-                <div className="w-full border-solid border-2 border-[#76B3B3]">
+                <div className="w-full border-solid border-2 border-[#FFFFFF]">
                 <div className="pt-2">
               <Bar data={data} options={option} height="100px" />
             </div>
                   <div className="flex flex-row h-[200px]">
-                    <p className="rotated text-[18px] font-semibold text-center my-4 px-4">
+                    <p className="rotated font-semibold text-center my-4 px-4">
                       Days To Recover
                     </p>
                     <Bar
@@ -323,7 +324,7 @@ const Product = () => {
                 {tableBarChart.map((chart) => {
                   return (
                     <div className="w-[250px] infoBox">
-                      <p className="text-[18px] font-semibold text-center my-4">
+                      <p className="font-semibold text-center my-4">
                         {chart.head}
                       </p>
                       <BarChart
@@ -341,7 +342,8 @@ const Product = () => {
               </div>
             </div>
           </div>
-        </Card>
+        </div>
+      </div>
       </div>
     </>
   );

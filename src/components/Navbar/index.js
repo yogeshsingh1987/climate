@@ -261,49 +261,49 @@ const Navbar = () => {
               <div className="megaMenu">
                 <ul>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">Overview</Link>
+                    <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                 </ul>
               </div>
@@ -324,31 +324,49 @@ const Navbar = () => {
               <ul className="nested-submenu">
                 <li>
                   <Link to="/supplier-chain/nested-submenu/item1">
-                    Material 1
+                    M6BAC013
                   </Link>
                 </li>
                 <li>
                   <Link to="/supplier-chain/nested-submenu/item2">
-                    Material 2
+                    M8BXT863
                   </Link>
                 </li>
-                {/* Add more nested submenu items as needed */}
+                <li>
+                  <Link to="/supplier-chain/nested-submenu/item2">
+                    M12KXP10
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/supplier-chain/nested-submenu/item2">
+                    M17CAT03
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/supplier-chain/nested-submenu/item2">
+                    M47MTJ19
+                  </Link>
+                </li>
               </ul>
             </li>
             <li>
               <Link to="/supplier-chain/nested-submenu">Supplier</Link>
               <ul className="nested-submenu">
                 <li>
-                  <Link to="/supplier-chain/nested-submenu/item1">
-                    Supplier 1
-                  </Link>
+                  <Link to="/supplier-chain/nested-submenu/item1">Tier 1</Link>
                 </li>
                 <li>
-                  <Link to="/supplier-chain/nested-submenu/item2">
-                    Supplier 2
-                  </Link>
+                  <Link to="/supplier-chain/nested-submenu/item2">Tier 2</Link>
                 </li>
-                {/* Add more nested submenu items as needed */}
+                <li>
+                  <Link to="/supplier-chain/nested-submenu/item2">Tier 3</Link>
+                </li>
+                <li>
+                  <Link to="/supplier-chain/nested-submenu/item2">Tier 4</Link>
+                </li>
+                <li>
+                  <Link to="/supplier-chain/nested-submenu/item2">Tier 5</Link>
+                </li>
               </ul>
             </li>
           </ul>

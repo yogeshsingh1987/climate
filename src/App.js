@@ -34,9 +34,9 @@ function App() {
   console.log("pathname: ", pathname);
   const removeHeader = ["/login"];
   return (
-    <div className="App overflow-x-auto">
+    <div className="md:container md:mx-auto">
       {!removeHeader.includes(pathname) && (
-        <div className="px-28 min-w-[1900px] m-auto">
+        <div className="m-auto">
           <Header />
         </div>
       )}

@@ -112,11 +112,11 @@ const SupplierChain = () => {
   };
   return (
     <>
-      <div className="px-28">
+      <div className="w-full">
         <FilterBar />
       </div>
-      <div className="px-28 py-5 min-w-1900px]">
-        <Card variant="dark" cls="w-full">
+      <div className="px-28 py-5 w-full">
+        <div>
           <div className="flex flex-row">
             <div>
               <div className="flex flex-row">
@@ -133,7 +133,7 @@ const SupplierChain = () => {
               </div>
             </div>
             <div className="w-[360px]">
-              <p className="text-[18px] ml-16 font-bold mb-12">
+              <p className="ml-16 font-bold mb-12">
                 Spend By Tiers
               </p>
               <div className="flex flex-row items-center w-[260px] h-[300px]">
@@ -162,14 +162,14 @@ const SupplierChain = () => {
               />
             </div>
           </div>
-        </Card>
+        </div>
       </div>
-      <div className="px-28 py-5 min-w-[1900px]">
+      <div className="py-5 w-full 22">
         <Card variant="dark" cls="flex flex-row pb-4">
           <div className="flex flex-row">
             <div>          
               <div className="w-[150px]  mr-5">
-                <p className="text-[18px] font-bold text-center -ml-4 mb-12">
+                <p className="font-bold text-center -ml-4 mb-12">
                   # of Suppliers
                 </p>
                 <DoughnutChart
@@ -197,7 +197,7 @@ const SupplierChain = () => {
                 {tableBarChart.map((chart) => {
                   return (
                     <div className="w-[300px] infoBox">
-                      <p className="text-[18px] font-semibold text-center my-4">
+                      <p className="font-semibold text-center my-4">
                         {chart.head}
                       </p>
                       <BarChart
@@ -258,6 +258,7 @@ const SupplierChain = () => {
                   Avg. Cost to B2B per supplier
                 </div>
               </div>
+              fsdfsf
               <table>
                 {/* <tr>
                   <th>Name</th>

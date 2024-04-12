@@ -81,7 +81,7 @@ nav {
 
 .nav-links a:hover {
   color: #37475C; /* Change color on hover */
-  text-shadow: 0 0 0.7px #37475C;
+  text-shadow: 0 0 1px #37475C;
 }
 
 /* Submenu styles */
@@ -132,7 +132,7 @@ nav {
 
 
 .submenu li a:hover  {
-  font-weight: bold;
+  text-shadow: 0 0 1px #37475C;
 }
 
 

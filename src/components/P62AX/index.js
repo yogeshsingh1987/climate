@@ -35,7 +35,7 @@ const options = {
 const P62AX = () => {
   return (
     <>
-      <div className="px-28">
+      <div className="w-full">
         <FilterBar />
       </div>
       <div className="px-28 py-5">
@@ -187,7 +187,7 @@ const P62AX = () => {
                 {tableBarChart.map((chart) => {
                   return (
                     <div className="w-[280px] border-solid border-2 border-[#76B3B3]">
-                      <p className="text-[18px] font-semibold text-center my-4">
+                      <p className="font-semibold text-center my-4">
                         {chart.head}
                       </p>
                       <BarChart

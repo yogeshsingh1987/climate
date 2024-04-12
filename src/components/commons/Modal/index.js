@@ -31,7 +31,7 @@ const Modal = ({
             <img
               src={CrossModalIcon}
               alt="CrossIcon"
-              height="22px"
+              height="22px"mr-5 min-w-35
               width="22px"
             />
           </div>

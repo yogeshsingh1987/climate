@@ -24,7 +24,7 @@ const Table = () => {
               <div className="line"></div>
             </div>
           </th>
-          <th>Hea tWave</th>
+          <th>Heat Wave</th>
           <th>Sea Level</th>
           <th>Flooding</th>
           <th>Precipitation</th>
@@ -47,7 +47,7 @@ const Table = () => {
         {tableBarChart.map((chart) => {
           return (
             <div className="w-[200px] infoBox">
-              <p className="text-[18px] font-semibold text-center my-4">
+              <p className="font-semibold text-center my-4">
                 {chart.head}
               </p>
               <BarChart
