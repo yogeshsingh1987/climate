@@ -69,7 +69,7 @@ const FilterBar = () => {
 
   return (
     <>
-      <div className="flex text-white px-9 pt-4 p-4 text-base font-medium justify-between items-center">
+      <div className="flex text-white px-9 pt-4 text-base font-medium justify-between items-center">
         <section data-component="LeftSection" className="flex items-center">
           {filterList.map((data, index) => {
             return (

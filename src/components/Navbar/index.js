@@ -261,49 +261,49 @@ const Navbar = () => {
               <div className="megaMenu">
                 <ul>
                   <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
+                    <Link to="/supplier-chain/vendors">P14562US</Link>
+                  </li>
+                  <li>
+                    <Link to="/supplier-chain/vendors">P12210US</Link>
+                  </li>
+                  <li>
+                    <Link to="/supplier-chain/vendors">P029A1US</Link>
+                  </li>
+                  <li>
+                    <Link to="/supplier-chain/vendors">PC7010US</Link>
                   </li>
                   <li>
                     <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
+                    <Link to="/supplier-chain/vendors">P62AX7US</Link>
+                  </li>
+                  <li>
+                    <Link to="/supplier-chain/vendors">P092A1US</Link>
+                  </li>
+                  <li>
+                    <Link to="/supplier-chain/vendors">P092A2US</Link>
+                  </li>
+                  <li>
+                    <Link to="/supplier-chain/vendors">PC7010US</Link>
                   </li>
                   <li>
                     <Link to="/supplier-chain/vendors">PA8231US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
+                    <Link to="/supplier-chain/vendors">P1PA09US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
+                    <Link to="/supplier-chain/vendors">P12210US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
+                    <Link to="/supplier-chain/vendors">P9XP77US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
+                    <Link to="/supplier-chain/vendors">PAX735US</Link>
                   </li>
                   <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
-                  </li>
-                  <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
-                  </li>
-                  <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
-                  </li>
-                  <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
-                  </li>
-                  <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
-                  </li>
-                  <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
-                  </li>
-                  <li>
-                    <Link to="/supplier-chain/vendors">PA8231US</Link>
+                    <Link to="/supplier-chain/vendors">PS8153US</Link>
                   </li>
                 </ul>
               </div>

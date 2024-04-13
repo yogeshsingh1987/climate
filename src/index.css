@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --mainBackgroundColor: #2C2C2C;
-  --primaryColor: #009BA5;
-  --secondaryColor: #00CAFF;
-  --darkestColor: #29525F;
+  --mainBackgroundColor: #2c2c2c;
+  --primaryColor: #009ba5;
+  --secondaryColor: #00caff;
+  --darkestColor: #29525f;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -19,7 +20,7 @@ body, html {
   background-color: var(--mainBackgroundColor);
   font-size: 16px;
   line-height: inherit;
-  color: #FFF;
+  color: #fff;
 }
 
 code {
@@ -44,11 +45,13 @@ code {
 
 table.infoTable {
   border-spacing: 8px;
-    border-collapse: separate;
+  border-collapse: separate;
+  width: 96%;
 }
 
-table.productInfoBox th, table.productInfoBox td {
-  border: 1px solid #FFF;
+table.productInfoBox th,
+table.productInfoBox td {
+  border: 1px solid #fff;
 }
 
 .background {
@@ -61,7 +64,7 @@ table.productInfoBox th, table.productInfoBox td {
 .line {
   width: 111px;
   height: 47px;
-  border-bottom: 1px solid #76B3B3;
+  border-bottom: 1px solid #76b3b3;
   transform: translateY(-20px) translateX(4px) rotate(26deg);
   position: absolute;
   /* z-index: -1; */
@@ -86,15 +89,17 @@ table.productInfoBox th, table.productInfoBox td {
   top: 1px;
   right: 1px;
 }
+
 td,
 th {
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   text-align: left;
   padding: 8px;
   font-size: 16px;
   font-weight: normal;
   text-align: center;
 }
+
 .header {
   background: linear-gradient(180deg, #fff 0%, #c1c0c0 100%);
   border-radius: 0px 0px 16px 16px;

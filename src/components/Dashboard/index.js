@@ -19,8 +19,8 @@ const Dashboard = () => {
         </div>
         <div className="w-full">
           <div className="1">
-            <div className="flex flex-row gap-4 w-full">
-              <Card variant="light" cls="mr-5 shrink-0">
+            <div className="flex flex-row gap-5 w-full">
+              <Card variant="light" cls="  shrink-0">
                 <RiskScore
                   num="54"
                   text1="Climate Risk Score"
@@ -29,7 +29,7 @@ const Dashboard = () => {
                   hrLine={true}
                 />
               </Card>
-              <Card variant="light" cls="mr-5 shrink-0">
+              <Card variant="light" cls=" shrink-0">
                 <RiskScore
                   num="32"
                   text1="Resilience Score"
@@ -37,22 +37,22 @@ const Dashboard = () => {
                   hrLine={true}
                 />
               </Card>
-              <div className="flex flex-col gap-4">
-                <div className="grid grid-cols-4 gap-4">
-                  <Card variant="transparent" cls="mr-5 ">
+              <div className="flex flex-col gap-5">
+                <div className="grid grid-cols-4 gap-5">
+                  <Card variant="transparent" cls="  ">
                     <NumScore num="$4.5B" text1="Total Revenue" />
                   </Card>
-                  <Card variant="transparent" cls="mr-5 ">
+                  <Card variant="transparent" cls="  ">
                     <NumScore num="$2.8B" text1="Total CA-VAR" text2="/year" />
                   </Card>
-                  <Card variant="transparent" cls="mr-5 ">
+                  <Card variant="transparent" cls="  ">
                     <NumScore
                       num="$295M"
                       text1="Resilience Investment"
                       text2="Avg/year"
                     />
                   </Card>
-                  <Card variant="transparent" cls="mr-5 ">
+                  <Card variant="transparent" cls=" ">
                     <NumScore
                       num="$295M"
                       text1="CA-VAR Adjustment"
@@ -60,8 +60,8 @@ const Dashboard = () => {
                     />
                   </Card>
                 </div>
-                <div className="grid grid-cols-4 gap-4">
-                  <BarCard text="Revenue by BU" cls="mr-5">
+                <div className="grid grid-cols-4 gap-5">
+                  <BarCard text="Revenue by BU" cls=" ">
                     <BarChart
                       indexAxis="y"
                       displayLegend={false}
@@ -72,7 +72,7 @@ const Dashboard = () => {
                       data={APP_CONST.barData}
                     />
                   </BarCard>
-                  <BarCard text="Res-Investment by BU" cls="mr-5 2323">
+                  <BarCard text="Res-Investment by BU" cls="  2323">
                     <BarChart
                       indexAxis="y"
                       displayLegend={false}
@@ -83,7 +83,7 @@ const Dashboard = () => {
                       data={APP_CONST.barData}
                     />
                   </BarCard>
-                  <BarCard text="Total CA-VAR by BU" cls="mr-5 2323">
+                  <BarCard text="Total CA-VAR by BU" cls="  2323">
                     <BarChart
                       indexAxis="y"
                       displayLegend={false}
@@ -94,7 +94,7 @@ const Dashboard = () => {
                       data={APP_CONST.barData}
                     />
                   </BarCard>
-                  <Card variant="transparent" cls="mr-5">
+                  <Card variant="transparent" cls=" ">
                     <NumScore num="$4.5B" text1="Total Revenue" />
                   </Card>
                 </div>
@@ -103,17 +103,17 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="w-full">
-          <div className="grid grid-cols-[30%_70%] gap-4 8888 ">
+          <div className="grid grid-cols-[25%_75%] gap-5 8888 ">
             <div className=" ">
               <img src={MapSvg} alt="MAP" className="" />
               {/* <Map /> */}
             </div>
             <div className=" sfsdf ">
-              <div className="grid grid-cols-[20%_80%] gap-4 85855">
+              <div className="grid grid-cols-[20%_80%] gap-5 85855">
                 <div className=" 222 ">
-                  <p className="text-[18px] font-bold mb-7">
+                  <div className="font-bold mb-7">
                     Exposure Analysis # of facilities
-                  </p>
+                  </div>
                   <DoughnutChart
                     data={APP_CONST.doughnutData}
                     displayLegend={false}
@@ -127,8 +127,9 @@ const Dashboard = () => {
               </div>
             </div>
 
-            <div className="flex flex-row justify-between"></div>
+            
           </div>
+          <div className="flex flex-row justify-between"></div>
         </div>
       </div>
     </>
