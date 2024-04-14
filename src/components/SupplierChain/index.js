@@ -193,7 +193,7 @@ const SupplierChain = () => {
               <div className="flex gap-2">
                 {tableBarChart.map((chart) => {
                   return (
-                    <div className="infoBox">
+                    <div className="w-[30%] infoBox">
                       <p className="font-semibold text-center my-4">
                         {chart.head}
                       </p>

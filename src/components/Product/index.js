@@ -276,13 +276,13 @@ const Product = () => {
           </div>
           <div className="">
 
-                <div className="grid grid-cols-[30%_70%] gap-5">
+                <div className="grid grid-cols-[30%_80%] gap-5">
 
                   <div>sfsf</div>
-                  <div>
-                  <p className="rotated font-semibold text-center my-4 px-4">
+                  <div className="grid grid-cols-[5%_95%]">
+                  <div className="rotated font-semibold text-center my-4 px-4">
                     Days To Recover
-                  </p>
+                  </div>
                   <Bar
                     indexAxis="x"
                     data={APP_CONST.barDataFrequency}
