@@ -311,7 +311,7 @@ const Navbar = () => {
           </ul>
         </li>
         <li>
-          <Link to="/supplier-chain">Supplier Chain</Link>
+          <Link to="/supplier">Supplier Chain</Link>
           <ul className="submenu">
             <li>
               <Link to="/supplier-chain/vendors">Overview</Link>
@@ -357,6 +357,33 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link to="/supplier-chain/nested-submenu/item2">Tier 2</Link>
+                  <ul className="subNested-submenu">
+                    <li>
+                      <Link to="/supplier-chain/nested-submenu/item1">
+                        Tier 1
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/supplier-chain/nested-submenu/item2">
+                        Tier 2
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/supplier-chain/nested-submenu/item2">
+                        Tier 3
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/supplier-chain/nested-submenu/item2">
+                        Tier 4
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/supplier-chain/nested-submenu/item2">
+                        Tier 5
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <Link to="/supplier-chain/nested-submenu/item2">Tier 3</Link>
@@ -366,6 +393,33 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link to="/supplier-chain/nested-submenu/item2">Tier 5</Link>
+                  <ul className="subNested-submenu">
+                    <li>
+                      <Link to="/supplier-chain/nested-submenu/item1">
+                        Tier 1
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/supplier-chain/nested-submenu/item2">
+                        Tier 2
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/supplier-chain/nested-submenu/item2">
+                        Tier 3
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/supplier-chain/nested-submenu/item2">
+                        Tier 4
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/supplier-chain/nested-submenu/item2">
+                        Tier 5
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>

@@ -170,7 +170,7 @@ const Product = () => {
         <div className="w-full">
           <FilterBar />
         </div>
-        <div className="grid grid-cols-[10%_20%_45%_20%] gap-5 4444">
+        <div className="grid grid-cols-[10%_20%_auto_20%] gap-5 4444">
           <div className=" ">
             <p className="21 font-bold mb-7 mt-4"># of facilities</p>
             <DoughnutChart

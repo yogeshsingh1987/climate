@@ -43,7 +43,7 @@ const Table = () => {
           );
         })}
       </table>
-      <div className="flex space-x-4 mt-4 p-2 border-solid border-2 border-[#2ED0C6]">
+      <div className="flex space-x-4 mt-4 p-2 45856 border-solid border-2 border-[#2ED0C6]">
         {tableBarChart.map((chart) => {
           return (
             <div className="w-[200px] infoBox">

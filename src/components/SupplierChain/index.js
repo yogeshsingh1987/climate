@@ -112,12 +112,21 @@ const SupplierChain = () => {
   };
   return (
     <>
-      <div className="w-full">
-        <FilterBar />
-      </div>
-      <div className="px-28 py-5 w-full">
-        <div>
-          <div className="flex flex-row">
+      <div className="grid grid-cols-1 gap-8">
+        <div className="w-full">
+          <FilterBar />
+        </div>
+        <div className="w-full ">
+          <div className="grid grid-cols-[10%_auto_25%_25%] gap-5">
+            <div>
+              <p className="font-bold text-center -ml-4 mb-12">
+                # of Suppliers
+              </p>
+              <DoughnutChart
+                data={APP_CONST.doughnutDataRegions}
+                displayLegend={false}
+              ></DoughnutChart>
+            </div>
             <div>
               <div className="flex flex-row">
                 <InfoCard heading="YTD Total Revenue" content="$215M" />
@@ -132,10 +141,8 @@ const SupplierChain = () => {
                 />
               </div>
             </div>
-            <div className="w-[360px]">
-              <p className="ml-16 font-bold mb-12">
-                Spend By Tiers
-              </p>
+            <div className=" ">
+              <p className="ml-16 font-bold mb-12">Spend By Tiers</p>
               <div className="flex flex-row items-center w-[260px] h-[300px]">
                 <PieChart
                   data={APP_CONST.doughnutDataTiers}
@@ -150,7 +157,7 @@ const SupplierChain = () => {
                 </div>
               </div>
             </div>
-            <div className="ml-8 flex flex-col items-center w-[500px]">
+            <div className=" ">
               <div className="mb-16 text-l font-medium">
                 Cost of Climate Disruptions to B2B
               </div>
@@ -163,20 +170,9 @@ const SupplierChain = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="py-5 w-full 22">
-        <Card variant="dark" cls="flex flex-row pb-4">
-          <div className="flex flex-row">
-            <div>          
-              <div className="w-[150px]  mr-5">
-                <p className="font-bold text-center -ml-4 mb-12">
-                  # of Suppliers
-                </p>
-                <DoughnutChart
-                  data={APP_CONST.doughnutDataRegions}
-                  displayLegend={false}
-                ></DoughnutChart>
-              </div>
+        <div className="w-full 22">
+          <div className="grid grid-cols-[32%_67%] gap-5">
+            <div>
               <div className="mr-5 mt-6">
                 <img src={Map} alt="MAPImage" />
                 <div className="flex flex-row justify-around mt-8">
@@ -184,7 +180,8 @@ const SupplierChain = () => {
                     High <div className="h-3 w-20 bg-[#FFA500] rounded-r"></div>
                   </div>
                   <div>
-                    Medium <div className="h-3 w-20 bg-[#8e7ebc] rounded-r"></div>
+                    Medium{" "}
+                    <div className="h-3 w-20 bg-[#8e7ebc] rounded-r"></div>
                   </div>
                   <div>
                     Low <div className="h-3 w-20 bg-[#2778ea] rounded-r"></div>
@@ -193,10 +190,10 @@ const SupplierChain = () => {
               </div>
             </div>
             <div>
-              <div className="flex space-x-4 mt-4 p-2 border-solid border-2 border-[#2ED0C6]">
+              <div className="flex gap-2">
                 {tableBarChart.map((chart) => {
                   return (
-                    <div className="w-[300px] infoBox">
+                    <div className="infoBox">
                       <p className="font-semibold text-center my-4">
                         {chart.head}
                       </p>
@@ -222,7 +219,7 @@ const SupplierChain = () => {
                 </div>
 
                 <div className="table-head w-[360px] bg-[#000000]">
-                  <div className="h-[41px]  pt-2" >
+                  <div className="h-[41px]  pt-2">
                     Climate Risk (# of Suppliers)
                   </div>
                   <div className="flex flex-row h-[41px] w-[360px]">
@@ -258,7 +255,6 @@ const SupplierChain = () => {
                   Avg. Cost to B2B per supplier
                 </div>
               </div>
-              fsdfsf
               <table>
                 {/* <tr>
                   <th>Name</th>
@@ -284,7 +280,7 @@ const SupplierChain = () => {
               </table>
             </div>
           </div>
-        </Card>
+        </div>
       </div>
     </>
   );
